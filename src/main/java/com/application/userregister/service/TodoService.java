@@ -38,8 +38,6 @@ public interface TodoService {
      *  7. void mTest_03();
      *  8. abstract void mTest_02();               // Modifier 'abstract' is redundant for interface methods
      *  9. public abstract void mTest_01();        // Modifier 'public' is redundant for interface methods, Modifier 'abstract' is redundant for interface methods
-     * 출처: https://xxxelppa.tistory.com/201 [한칸짜리책상서랍:티스토리]
-     *
      *
      * */
     TodoResponse add(TodoRequest req);
