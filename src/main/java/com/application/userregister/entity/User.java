@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import java.time.LocalDateTime;
 
@@ -13,6 +14,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
+@EntityListeners(AuditingEntityListener.class)
 public class User {
 
     @Id
@@ -38,7 +40,8 @@ public class User {
     private String userBirth;
     /* 회원등급 */
     @Enumerated(EnumType.STRING)
-    private Userauthority userauthority;
+    private Userauthority userAuthority;
+
     /* @CreatedDate => 처음 최초 생성시간 입력 */
     @CreatedDate
     private LocalDateTime frstInpYmd;

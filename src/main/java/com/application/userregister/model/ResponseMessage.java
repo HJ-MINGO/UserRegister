@@ -18,7 +18,7 @@ public class ResponseMessage {
     private String message;
     private Object data;
 
-    ResponseMessage (String message){
+    public ResponseMessage (String message){
         this(HttpStatus.OK,message,null);
     }
 
