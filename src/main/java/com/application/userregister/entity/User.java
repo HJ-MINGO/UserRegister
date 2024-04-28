@@ -1,5 +1,6 @@
 package com.application.userregister.entity;
 
+import com.application.userregister.enumall.Userauthority;
 import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.data.annotation.CreatedDate;

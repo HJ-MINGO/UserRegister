@@ -1,7 +1,7 @@
 package com.application.userregister.service.impl;
 
 import com.application.userregister.entity.User;
-import com.application.userregister.entity.Userauthority;
+import com.application.userregister.enumall.Userauthority;
 import com.application.userregister.model.RequestAll;
 import com.application.userregister.repository.UserRepository;
 import com.application.userregister.service.UserService;
@@ -10,9 +10,6 @@ import jakarta.persistence.EntityTransaction;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
-import java.util.Collections;
-import java.util.Map;
 
 @Service
 @RequiredArgsConstructor

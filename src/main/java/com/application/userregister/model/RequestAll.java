@@ -1,16 +1,13 @@
 package com.application.userregister.model;
 
-import com.application.userregister.entity.Userauthority;
+import com.application.userregister.enumall.Userauthority;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 import lombok.*;
-import org.springframework.data.annotation.CreatedDate;
-import org.springframework.data.annotation.LastModifiedDate;
-
-import java.time.LocalDateTime;
 
 
 public class RequestAll {
@@ -28,6 +25,7 @@ public class RequestAll {
         /* 회원 비밀번호 */
         private String userPass;
         @NotNull
+        @Size(min=2,max=5, message = "No~!!")
         /* 회원 이름*/
         private String userName;
         /* 회원 전화번호*/
