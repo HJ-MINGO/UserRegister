@@ -2,9 +2,7 @@ package com.application.userregister.controller;
 
 import com.application.userregister.model.TodoResponse;
 import com.application.userregister.service.TodoService;
-import com.application.userregister.util.ResponseMessage;
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
+import com.application.userregister.model.ResponseMessage;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
